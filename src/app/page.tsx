@@ -90,12 +90,12 @@ export default function Home() {
             <strong className='text-white'>general</strong>
           </div>
           <div className='flex gap-2 items-center'>
-            <Bell className='text-zinc-400' />
-            <Pin className='text-zinc-400' />
-            <Users className='text-zinc-400' />
+            <Bell className='text-zinc-400 hover:text-zinc-200 cursor-pointer' />
+            <Pin className='text-zinc-400 hover:text-zinc-200 cursor-pointer' />
+            <Users className='text-zinc-400 hover:text-zinc-200 cursor-pointer' />
             <input type="text" className='bg-zinc-800 text-gray-200 rounded-lg px-3 py-1' placeholder='Search' />
-            <AtSign className='text-zinc-400' />
-            <HelpCircle className='text-zinc-400' />
+            <AtSign className='text-zinc-400 hover:text-zinc-200 cursor-pointer' />
+            <HelpCircle className='text-zinc-400 hover:text-zinc-200 cursor-pointer' />
           </div>
         </div>
         <div className='flex flex-1 border-t-2 border-zinc-800 w-full flex-col-reverse'>
