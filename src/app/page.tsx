@@ -23,7 +23,7 @@ import {
 export default function Home() {
   return (
     <div className="h-screen flex">
-      <aside className="bg-sidebar1 w-16 flex flex-col items-center pt-4">
+      <aside className="bg-sidebar1 w-14 flex flex-col items-center pt-3">
         <div className="bg-bg-icon w-11 h-11 flex items-center justify-center rounded-full hover:bg-blue-700 hover:rounded-xl transition cursor-pointer">
           <Image src="/logo.svg" alt="Discord Logo" width={24} height={24} />
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </div>
       </aside>
-      <section className="bg-sidebar2 w-60 flex flex-col">
+      <section className="bg-sidebar2 w-52 flex flex-col">
         <div className="flex justify-between p-3 hover:bg-zinc-700 cursor-pointer">
           <strong className="text-white">Guild</strong>
           <ChevronDown className="text-white" />
@@ -62,28 +62,28 @@ export default function Home() {
                 <Plus size={18} className="text-gray-400 hover:text-gray-200" />
               </div>
               <div className="flex items-center gap-2 mt-2 bg-chat px-2 py-2 rounded-md cursor-pointer">
-                <Hash className="text-gray-300" />
-                <p className="flex-1 font-semibold text-gray-300">general</p>
+                <Hash size={16} className="text-gray-300" />
+                <p className="flex-1 font-medium text-gray-300 text-sm">general</p>
                 <UserPlus
-                  size={16}
+                  size={12}
                   className="text-gray-400 hover:text-gray-300 transition-colors"
                 />
                 <Settings
-                  size={16}
+                  size={12}
                   className="text-gray-400 hover:text-gray-300 transition-colors"
                 />
               </div>
               <div className="flex items-center gap-2 mt-2 group hover:bg-zinc-600 px-2 py-2 rounded-md transition-colors cursor-pointer">
-                <Hash className="text-gray-400 group-hover:text-gray-300 transition-colors" />
-                <p className="flex-1 text-gray-400 font-semibold group-hover:text-gray-300 transition-colors">
+                <Hash size={16} className="text-gray-400 group-hover:text-gray-300 transition-colors" />
+                <p className="flex-1 text-gray-400 font-medium text-sm group-hover:text-gray-300 transition-colors">
                   info-server
                 </p>
                 <UserPlus
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
                 <Settings
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
               </div>
@@ -100,74 +100,74 @@ export default function Home() {
                 <Plus size={18} className="text-gray-400 hover:text-gray-200" />
               </div>
               <div className="flex items-center gap-2 mt-2 group hover:bg-zinc-600 px-2 py-2 rounded-md transition-colors cursor-pointer">
-                <Volume2 className="text-gray-400 group-hover:text-gray-300 transition-colors" />
-                <p className="flex-1 text-gray-400 font-semibold group-hover:text-gray-300 transition-colors">
+                <Volume2 size={16} className="text-gray-400 group-hover:text-gray-300 transition-colors" />
+                <p className="flex-1 text-gray-400 font-medium text-sm group-hover:text-gray-300 transition-colors">
                   General
                 </p>
                 <MessageSquare
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
                 <UserPlus
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
                 <Settings
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
               </div>
               <div className="flex items-center gap-2 mt-2 group hover:bg-zinc-600 px-2 py-2 rounded-md transition-colors cursor-pointer">
-                <Volume2 className="text-gray-400 group-hover:text-gray-300 transition-colors" />
-                <p className="flex-1 text-gray-400 font-semibold group-hover:text-gray-300 transition-colors">
+                <Volume2 size={16} className="text-gray-400 group-hover:text-gray-300 transition-colors" />
+                <p className="flex-1 text-gray-400 font-medium text-sm group-hover:text-gray-300 transition-colors">
                   Playing
                 </p>
                 <MessageSquare
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
                 <UserPlus
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
                 <Settings
-                  size={16}
+                  size={12}
                   className="text-gray-400 invisible group-hover:visible group-hover:text-gray-300 transition-colors"
                 />
               </div>
             </div>
           </div>
         </div>
-        <div className="flex bg-voice px-4 py-2 items-center">
+        <div className="flex bg-voice py-1 px-2 items-center">
           <div className="relative cursor-pointer">
             <Image
-              width={32}
-              height={32}
+              width={28}
+              height={28}
               src={"/atsuya.jpg"}
               alt="Profile photo"
               className="rounded-full"
             />
-            <span className="bottom-0 left-6 absolute w-2.5 h-2.5 bg-green-400 rounded-full"></span>
+            <span className="bottom-0 left-5 absolute w-2.5 h-2.5 bg-green-400 rounded-full"></span>
           </div>
           <div className="flex flex-col flex-1 ml-4">
-            <strong className="text-white max-w-max hover:underline cursor-pointer">
+            <strong className="text-white text-sm hover:underline cursor-pointer">
               kalyan
             </strong>
-            <span className="text-gray-300 max-w-max hover:underline cursor-pointer">
+            <span className="text-gray-300 text-sm hover:underline cursor-pointer">
               #4141
             </span>
           </div>
           <div className="flex gap-2">
             <Mic
-              size={20}
+              size={16}
               className="text-gray-300 hover:text-gray-100 cursor-pointer"
             />
             <Headphones
-              size={20}
+              size={16}
               className="text-gray-300 hover:text-gray-100 cursor-pointer"
             />
             <Settings
-              size={20}
+              size={16}
               className="text-gray-300 hover:text-gray-100 cursor-pointer"
             />
           </div>
@@ -180,16 +180,16 @@ export default function Home() {
             <strong className="text-white">general</strong>
           </div>
           <div className="flex gap-2 items-center">
-            <Bell className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
-            <Pin className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
-            <Users className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
+            <Bell size={20} className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
+            <Pin size={20} className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
+            <Users size={20} className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
             <input
               type="text"
               className="bg-zinc-800 text-gray-200 rounded-lg px-3 py-1"
               placeholder="Search"
             />
-            <AtSign className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
-            <HelpCircle className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
+            <AtSign size={20} className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
+            <HelpCircle size={20} className="text-zinc-400 hover:text-zinc-200 cursor-pointer" />
           </div>
         </div>
         <div className="flex h-full">
@@ -265,7 +265,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex mx-4 gap-1">
+            <div className="flex m-4 gap-1">
               <div className="flex justify-center items-center bg-input p-2 rounded-l-lg cursor-pointer group">
                 <div className="rounded-full p-0.5 bg-gray-400 w-4 h-4 flex items-center group-hover:bg-gray-200">
                   <Plus className="text-input " />
